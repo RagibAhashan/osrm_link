@@ -1,0 +1,1000 @@
+  141  ls
+  142  pwd
+  143  cd mingw64/
+  144  cd libexec/
+  145  cd git-core/
+  146  ls
+  147  pwd
+  148  git config --global credential.helper "/mnt/c/Program Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
+  149  clear
+  150  cd
+  151  ls
+  152  cd ~
+  153  cd /mnt/
+  154  ls
+  155  cd c/
+  156  ls
+  157  cd Users/Ahashan/
+  158  ls
+  159  clear
+  160  ls
+  161  cd Documents/
+  162  cd localstocks/
+  163  ls
+  164  git pull
+  165  git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
+  166  git pull
+  167  cd Documents/loop/
+  168  git pull
+  169  cd Documents/localstocks/
+  170  ls
+  171  code server/
+  172  python
+  173  python3
+  174  cd Documents/
+  175  ls
+  176  git clone https://github.com/RagibAhashan/INF8215.git
+  177  cd INF8215/
+  178  ls
+  179  cd INF8215-H22-TP1/
+  180  ls
+  181  code Code-pour-etudiant/code/
+  182  cd Code-pour-etudiant/code/
+  183  python pacman.py -l tinyMaze -p SearchAgent -a fn=tinyMazeSearch
+  184  python3 pacman.py -l tinyMaze -p SearchAgent -a fn=tinyMazeSearch
+  185  git add .
+  186  git commit -m 'ok'
+  187  git push 
+  188  cd Documents/l
+  189  cd Documents/
+  190  ls
+  191  cd INF8215/
+  192  ls
+  193  code INF8215-H22-TP1/Code-pour-etudiant/code/
+  194  cd Documents/
+  195  ls
+  196  cd INF8215/
+  197  ls
+  198  cd INF8215-H22-TP1/
+  199  ls
+  200  cd Code-pour-etudiant/
+  201  ls
+  202  cd code/
+  203  git add .
+  204  git commit -m 'copy'
+  205  git push
+  206  exit
+  207  clear
+  208  git fetch origin wtfsolution
+  209  git checkout wtfsolution
+  210  python3 main.py -a recursif -e N50000_0 -t > pritam
+  211  python3 main.py -a recursif -e N50000_0 -t > recursif_50000_0_test
+  212  python3 main.py -a brute -e N50000_0 -t > brute_50000_0_test
+  213  python3 main.py -a recursif -e N100000_0 -t > brute_100000_0_test
+  214  python3 main.py -a recursif -e N500000_0 -t > recursif_500000_0_test
+  215  exit
+  216  sudo snap install flutter --classic
+  217  cd Documents/
+  218  git clone https://github.com/flutter/flutter.git -b stable
+  219  ls
+  220  ls -l
+  221  ls -a
+  222  python automate.py 
+  223  python3 automate.py 
+  224  clear
+  225  python3 automate.py 
+  226  python3 automate.py > all_files.txt
+  227  code ../TP1_H22/
+  228  python3 automate.py 
+  229  clear
+  230  python3 automate.py 
+  231  clear
+  232  python3 automate.py 
+  233  git add .
+  234  git commit -m 'results are here' 
+  235  git push origin main
+  236  clear
+  237  cd Documents/INF8775/
+  238  ls
+  239  code TP2-H22/
+  240  cd Documents/
+  241  cd INF8775/
+  242  ls
+  243  cd TP2-H22/
+  244  ls
+  245  git pull origin main
+  246  python3 automate.py 
+  247  git add .
+  248  git commit -m 'adding results'
+  249  git push origin main
+  250  git pull origin main
+  251  clear
+  252  ls
+  253  vim automate.py 
+  254  python3 automate.py 
+  255  clear
+  256  python3 automate.py 
+  257  vim main.py 
+  258  python3 automate.py 
+  259  git add .
+  260  git stash
+  261  git pull origin main
+  262  clear
+  263  python3 automate.py 
+  264  tree
+  265  clear
+  266  ls
+  267  vim automate.py 
+  268  clear
+  269  python3 automate.py 
+  270  git add .
+  271  git commit -m 'new data'
+  272  git pull origin main
+  273  clear
+  274  vim automate.py 
+  275  python3 automate.py 
+  276  vim algo_tabou.py 
+  277  vim main.py 
+  278  python3 automate.py 
+  279  code algo_tabou.py 
+  280  python3 main.py -a tabou -e data/exemple.txt -t -p
+  281  code algo_tabou.py 
+  282  python3 main.py -a tabou -e data/exemple.txt -t -p
+  283  clear
+  284  python3 automate.py 
+  285  cd
+  286  cd Doc
+  287  ls
+  288  ls -l
+  289  exit
+  290  cd Documents/
+  291  ls
+  292  cd INF8215/
+  293  ls
+  294  cd INF8215-H22-TP1/
+  295  ls
+  296  git pull origin main
+  297  ls
+  298  cd ..
+  299  ls
+  300  cd INF8215-H2022-project/
+  301  ls
+  302  code .
+  303  python3 greedy_player.py --bind localhost --port 8080
+  304  python3 game.py http://localhost:8000/ human --time 300
+  305  python3 game.py http://localhost:8000/ http://localhost:8080/ --time 300
+  306  pip3 install numpy
+  307  sudo pip3 install numpy
+  308  python my_player.py --bind localhost --port 8000
+  309  python3 my_player.py --bind localhost --port 8000
+  310  cd Documents/INF8215/
+  311  ls
+  312  cd INF8215-H2022-project/
+  313  ls
+  314  python3 greedy_player.py --bind localhost --port 8080
+  315  cd Documents/INF8215/
+  316  ls
+  317  cd INF8215-H2022-project/
+  318  ls
+  319  python3 my_player.py --bind localhost --port 8000
+  320  git add .
+  321  git commit -m 'ragib changes'
+  322  git push origin main
+  323  ls
+  324  git clone https://github.com/Project-OSRM/osrm-backend.git
+  325  ls
+  326  cd osrm-backend/
+  327  ls
+  328  printenv > /tmp/tmp-201598KBn7GZtT9ftxt
+  329  cd osrm-backend/build/
+  330  ls
+  331  cd include/
+  332  ls
+  333  cd util/
+  334  ls
+  335  cd ../..
+  336  ls
+  337  cd cmake/
+  338  ls
+  339  cd ..
+  340  ls
+  341  cd ..
+  342  ls
+  343  rm -rf build
+  344  cd b
+  345  mkdir build
+  346  cd build/
+  347  cmake .. -DENABLE_MASON=ON -DBUILD_SHARED_LIBS=ON -DCMAKE_CXX_COMPILER=/opt/rh/devtoolset-6/root/usr/bin/g++
+  348  ls
+  349  where g++
+  350  which g++
+  351  cmake .. -DENABLE_MASON=ON -DBUILD_SHARED_LIBS=ON -DCMAKE_CXX_COMPILER=/usr/bin/g++
+  352  ls
+  353  ls -la
+  354  make
+  355  ls
+  356  python3 main.py 
+  357  pwd
+  358  cd ..
+  359  cd pylib/
+  360  python3 main.py 
+  361  cd ..
+  362  ls
+  363  cd osrm-backend/
+  364  ls
+  365  cd build/
+  366  ls
+  367  cd ..
+  368  cd clink/pylib/
+  369  python3 main.py 
+  370  ls
+  371  sudo snap install flutter --classic
+  372  wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.0.5-stable.tar.xz
+  373  ls
+  374  tar xf flutter_linux_3.0.5-stable.tar.xz
+  375  ls
+  376  cd flutter/
+  377  ls
+  378  cd ..
+  379  ls
+  380  pwd
+  381  export PATH="$PATH:/home/ahashan/flutter/bin"
+  382  echo $PATH
+  383  which dart
+  384  which flutter darty
+  385  which flutter dart
+  386  ls
+  387  cd asap/
+  388  ls
+  389  cd APP
+  390  ls
+  391  cd peddle/
+  392  ls
+  393  flutter doctor
+  394  flutter pub get
+  395  ls
+  396  cd peddle/
+  397  ls
+  398  flutter pub get
+  399  cd .
+  400  cd ..
+  401  ls
+  402  cd flutter/
+  403  ls
+  404  cd bin/
+  405  pwd
+  406  export PATH="$PATH:/mnt/c/Users/Ahashan/Documents/flutter/bin"
+  407  echo $PATH
+  408  ls
+  409  cd ../APP
+  410  cd ../../APP/
+  411  ls
+  412  cd peddle/
+  413  ls
+  414  flutter pub get
+  415  sudo apt-get install unzip
+  416  flutter pub get
+  417  /bin/python3 /home/ahashan/osrm/bridgetwo/main.py
+  418  git clone https://github.com/Project-OSRM/osrm-backend.git
+  419  cd osrm-backend/
+  420  git checkout tags/v5.25.0
+  421  ls
+  422  mkdir build
+  423  cd build/
+  424  cmake .. -DENABLE_MASON=ON -DBUILD_SHARED_LIBS=ON -DCMAKE_CXX_COMPILER=/usr/bin/g++
+  425  ls
+  426  make
+  427  ls
+  428  cd ..
+  429  ls
+  430  cd ..
+  431  ls
+  432  cd example/
+  433  ls
+  434  cd ..
+  435  mv example link
+  436  rm -rf example/
+  437  cd bridge/
+  438  ls
+  439  mkdir build
+  440  cd build/
+  441  cmake ..
+  442  make
+  443  cd
+  444  cd osrm/
+  445  ls
+  446  cd bridgetwo/
+  447  ls
+  448  mkdir build
+  449  cd build/
+  450  cmake ..
+  451  make
+  452  cmake ..
+  453  make
+  454  sudo apt-get install libboost-all-dev
+  455  cmake ..
+  456  make
+  457  cd ..
+  458  rm -rf build/
+  459  mkdir build
+  460  cd build/
+  461  cmake ..
+  462  cd ..
+  463  ls
+  464  rm -rf build/
+  465  cd b
+  466  mkdir build
+  467  cd build/
+  468  ls
+  469  cmake ..
+  470  cd ..
+  471  rm -rf build/
+  472  mkdir build
+  473  cd build/
+  474  cmake ..
+  475  make
+  476  cd ..
+  477  touch main.py
+  478  rm -rf build/
+  479  mkdir build
+  480  cd build/
+  481  cmake ..
+  482  make
+  483  cd ..
+  484  python3 main.py 
+  485  find_package(LibOSRM)
+  486  find_package("LibOSRM")
+  487  which LibOSRM
+  488  cd 
+  489  cd ~
+  490  cd ..
+  491  ls
+  492  cd ..
+  493  ls
+  494  cd usr/local/
+  495  ls
+  496  cd lib
+  497  ls
+  498  cd
+  499  ls
+  500  cd osrm/
+  501  ls
+  502  cd bridgetwo/
+  503  ls
+  504  cd build/
+  505  cmake ..
+  506  make 
+  507  cd ..
+  508  rm -rf build/
+  509  mkdir build
+  510  cd build/
+  511  cmake ..
+  512  make
+  513  cd ..
+  514  ls
+  515  touch Makefile
+  516  make
+  517  rm -rf build/
+  518  ls
+  519  mkdir build
+  520  cd build/
+  521  ls
+  522  cmake ..
+  523  ls
+  524  cd ..
+  525  ls
+  526  rm -rf CMakeCache.txt 
+  527  ls
+  528  rm -rf build/
+  529  mkdir build
+  530  cd build/
+  531  ls
+  532  cmake ..
+  533  make
+  534  make; cd ..; python3 main.py; cd build
+  535  ls
+  536  cd bridgetwo/
+  537  ls
+  538  cd build/
+  539  ls
+  540  cmake ..
+  541  make
+  542  cd ..
+  543  ls
+  544  python3 main.py 
+  545  ls
+  546  cd pylib/
+  547  cd ..
+  548  ls
+  549  cd ..
+  550  cd clink/
+  551  ls
+  552  python3 main.py 
+  553  osrm-routed --max-matching-size -1 maps/canada-latest.osrm
+  554  history
+  555  history > save.txt
+  556  python3 main.py 
+  557  readelf -s osrm-backend/build/libosrm.so
+  558  objdump -p osrm-backend/build/libosrm.so
+  559  nm -gD  osrm-backend/build/libosrm.so
+  560  cd osrm_bindings/
+  561  ls
+  562  cmake .
+  563  mkdir build
+  564  rm -rf CMakeFiles/
+  565  ls
+  566  cd build/
+  567  cmake ..
+  568  sudo apt-get install libboost-all-dev
+  569  cmake ..
+  570  make
+  571  make install
+  572  find_package(Boost)
+  573  find_package(boost)
+  574  ls
+  575  cd ..
+  576  rm -rf build/
+  577  mkdir -p build
+  578  cd build/
+  579  ls
+  580  cmake ..
+  581  make
+  582  cmake ..
+  583  make
+  584  cd ..
+  585  rm -rf build/
+  586  mkdir -p build
+  587  cd build/
+  588  cmake ..
+  589  make
+  590  cd ..
+  591  rm -rf build/
+  592  mkdir build
+  593  cd build/
+  594  cmake ..
+  595  make
+  596  cmake ..
+  597  make
+  598  cmake ..
+  599  make
+  600  python3 ../main.py 
+  601  cd ..
+  602  ls
+  603  python3 main.py 
+  604  ls /usr/local/lib
+  605  ls -ls /usr/local/lib
+  606  osrm-extract 
+  607  cd ..
+  608  ls
+  609  cd ..
+  610  cd usr/
+  611  cd local/
+  612  ls
+  613  cd lib/
+  614  ls
+  615  cd
+  616  cd Documents/
+  617  ls
+  618  cd clink/
+  619  ls
+  620  cd osrm_bindings/
+  621  ls
+  622  python3 main.py 
+  623  cd ..
+  624  ls
+  625  cd clink/
+  626  ls
+  627  cd osrm_bindings/
+  628  ls
+  629  ls ../maps
+  630  ls
+  631  python3 main.py 
+  632  ls
+  633  cd cmake/
+  634  cd ../
+  635  ls
+  636  cd build/
+  637  ls
+  638  cmake ..
+  639  make
+  640  cd ..
+  641  ls
+  642  python3 main.py 
+  643  cd build/
+  644  ls
+  645  make
+  646  python3 ../main.py 
+  647  cmake ..
+  648  make
+  649  cd ..
+  650  python3 main.py 
+  651  cd build/
+  652  make
+  653  cd ..
+  654  python3 main.py 
+  655  cd build/
+  656  make
+  657  cd ..
+  658  python3 main.py 
+  659  cd build/
+  660  make
+  661  cd ..
+  662  ls
+  663  python3 main.py 
+  664  hisotry
+  665  history
+  666  ls
+  667  cd ..
+  668  ls
+  669  python3 main.py 
+  670  ls
+  671  cd osrm_bindings/
+  672  ls
+  673  python3 main.py 
+  674  ls
+  675  cd build/
+  676  cmake
+  677  cmake ..
+  678  make
+  679  cd ..
+  680  ls
+  681  python3 main.py 
+  682  history
+  683  pkg-config libOSRM --libs
+  684  ls
+  685  cd build/
+  686  cmake ..
+  687  cd ..
+  688  ls
+  689  touch Makefile
+  690  make
+  691  ls
+  692  cd build/
+  693  ls
+  694  cmake ..
+  695  make
+  696  cd ..
+  697  cd build/; make; cd ..; python3 main.py 
+  698  cd ..
+  699  ls
+  700  history
+  701  history > save2.txt
+  702  ls
+  703  cd bridgetwo/
+  704  ls
+  705  cd build/
+  706  make
+  707  cd ..
+  708  python3 main.py 
+  709  ls
+  710  ls ../../
+  711  ls ../../Documents/clink/maps/canada-latest.osrm
+  712  ls
+  713  cd build/
+  714  make
+  715  cd ..
+  716  python3 main.py 
+  717  ls
+  718  cd build/
+  719  ls
+  720  make
+  721  cd ..
+  722  ls
+  723  python3 main.py 
+  724  cd build/
+  725  ls
+  726  cd ..
+  727  ls
+  728  build/make
+  729  cd build/
+  730  make
+  731  cd .
+  732  cd ..
+  733  ls
+  734  python3 main.py 
+  735  make
+  736  ls
+  737  cd build/
+  738  ls
+  739  make
+  740  cd ..
+  741  make
+  742  ls
+  743  cd build/
+  744  make
+  745  cd ..
+  746  make
+  747  cd ..
+  748  ls
+  749  cd osrm-backend/
+  750  ls
+  751  cd example/
+  752  ls
+  753  mkdir build
+  754  cd build/
+  755  cmake ..
+  756  make
+  757  cmake ..
+  758  cd ..
+  759  rm -rf build/
+  760  mkdir build
+  761  cd build/
+  762  cmake ..
+  763  make
+  764  cd ..
+  765  ls
+  766  g++ example.cpp -o output.o
+  767  rm -rf build/
+  768  cd ..
+  769  ls
+  770  cd build/
+  771  sudo make install
+  772  cd ..
+  773  cd example/
+  774  ls
+  775  mkdir build
+  776  cd build/
+  777  cmake ..
+  778  make
+  779  cd ..
+  780  ls
+  781  rm -rf build/
+  782  mkdir build
+  783  cd build/
+  784  cmake ..
+  785  make install
+  786  make
+  787  cd ..
+  788  rm -rf build/
+  789  cd ..
+  790  ls
+  791  cd ..
+  792  cd bridgetwo/
+  793  ls
+  794  cd build/
+  795  make 
+  796  cmake ..
+  797  make
+  798  cd ..
+  799  ls
+  800  make
+  801  ls ../../Documents/clink/lib/
+  802  ls ../../Documents/clink/
+  803  ls ../../Documents/clink/car.lua
+  804  ls ../../Documents/clink/maps/canada-latest.osrm
+  805  osrm-extract -p ../../Documents/clink/car.lua ../../Documents/clink/maps/canada-latest.osrm 
+  806  cd ..
+  807  ls
+  808  cd Documents/
+  809  ls
+  810  cd clink/
+  811  ls
+  812  osrm-extract -p car.lua maps/canada-latest.osrm
+  813  cd /usr/
+  814  ls
+  815  cd lib
+  816  ls
+  817  cd ..
+  818  ls
+  819  cd local/
+  820  ls
+  821  cd lib/
+  822  ls
+  823  cd
+  824  cd Documents/
+  825  ls
+  826  cd clink/
+  827  ls
+  828  ./osrm-extract
+  829  ls
+  830  cd ..
+  831  ls
+  832  cd ..
+  833  ls
+  834  cd osrm/
+  835  ls
+  836  mkdir map
+  837  cd map/
+  838  ls
+  839  wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.0.5-stable.tar.xz
+  840  ls
+  841  rm -rf flutter_linux_3.0.5-stable.tar.xz 
+  842  wget https://download.geofabrik.de/north-america/canada-latest.osm.pbf
+  843  ls
+  844  cd ..
+  845  ls
+  846  ln -s osrm-backend/profiles/car.lua
+  847  ln -s osrm-backend/profiles/lib
+  848  osrm-extract maps/canada-latest.osm.pbf -p osrm-backend/profiles/car.lua
+  849  osrm-extract map/canada-latest.osm.pbf -p osrm-backend/profiles/car.lua
+  850  ls
+  851  rm -rf osrm-backend/
+  852  rm -rf car.lua lib 
+  853  ls
+  854  cd map/
+  855  ls
+  856  cd ..
+  857  osrm-extract 
+  858  git clone https://github.com/Project-OSRM/osrm-backend.git
+  859  cd osrm-backend/
+  860  git checkout tags/v5.25.0
+  861  mkdir build
+  862  cd build/
+  863  cmake ..
+  864  sudo make install
+  865  cd ..
+  866  echo disk=/tmp/stxxl,10G,syscall > .stxxl
+  867  ls
+  868  ln -s osrm-backend/profiles/car.lua
+  869  ln -s osrm-backend/profiles/lib
+  870  osrm-extract maps/canada-latest.osm.pbf -p osrm-backend/profiles/car.lua
+  871  osrm-partition maps/canada-latest.osrm
+  872  osrm-customize maps/canada-latest.osrm
+  873  cd bridgetwo/
+  874  ls
+  875  rm -rf build/
+  876  mkdir build
+  877  cd build/
+  878  cmake ..
+  879  make
+  880  cd ..
+  881  ls
+  882  make
+  883  cd build/
+  884  make
+  885  cd ..
+  886  make
+  887  cd build/
+  888  make
+  889  cd ..
+  890  make 
+  891  cd build/
+  892  make
+  893  cd ..
+  894  make
+  895  cd build/
+  896  make
+  897  cd ..
+  898  make
+  899  cd build/; make; cd ..; make
+  900  cd ..
+  901  ls
+  902  cd osrm-backend/
+  903  ls
+  904  cd example/
+  905  ls
+  906  mkdir build
+  907  cd build/
+  908  cmake ..
+  909  cd ..
+  910  rm -rf build/
+  911  mkdir build
+  912  cd build/
+  913  ls
+  914  make ..
+  915  cmake ..
+  916  make
+  917  cd ..
+  918  ls
+  919  cd bridgetwo/
+  920  ls
+  921  cd build/
+  922  make
+  923  cd ..
+  924  make
+  925  ls
+  926  cd build/
+  927  ls
+  928  make
+  929  cd ..
+  930  make
+  931  ls
+  932  cd build/
+  933  make
+  934  cd ..
+  935  make
+  936  cd build/
+  937  ls
+  938  make
+  939  cd ..
+  940  make
+  941  python3 main.py 
+  942  cd build/
+  943  make
+  944  cd ..
+  945  make
+  946  cd build/
+  947  make
+  948  cd ..
+  949  make
+  950  ls
+  951  cd build/
+  952  make
+  953  cd ..
+  954  make
+  955  cd ..
+  956  cd bridgetwo/
+  957  cd build/
+  958  make
+  959  cd ..
+  960  make
+  961  cd build/
+  962  make
+  963  cd ..
+  964  make
+  965  cd build/
+  966  make
+  967  cd ..
+  968  make
+  969  cd build/
+  970  make
+  971  cd ..
+  972  make
+  973  cd build/
+  974  make
+  975  cd ..
+  976  make 
+  977  cd build/
+  978  ls
+  979  make
+  980  cd ..
+  981  make
+  982  cd ..
+  983  cd bridgetwo/
+  984  cd build/
+  985  make
+  986  cd ..
+  987  ls
+  988  cd build/
+  989  make
+  990  cd ..
+  991  make
+  992  cd build/
+  993  make
+  994  cd ..
+  995  make
+  996  cd build/
+  997  make
+  998  cd ..
+  999  make
+ 1000  cd ..
+ 1001  ls
+ 1002  git clone https://github.com/RagibAhashan/osrm_link.git
+ 1003  cd osrm_link/
+ 1004  ls
+ 1005  git add .
+ 1006  git commit -m 'first commit'
+ 1007  git push origin main
+ 1008  git push
+ 1009  cd Documents/
+ 1010  ls
+ 1011  cd clink/
+ 1012  ls
+ 1013  cd ..
+ 1014  ls
+ 1015  rm -rf flutter_linux_3.0.5-stable.tar.xz 
+ 1016  ls
+ 1017  vin nodesource_setup.sh 
+ 1018  vim nodesource_setup.sh 
+ 1019  ls
+ 1020  cd Documents/
+ 1021  ls
+ 1022  cd clink/
+ 1023  ls
+ 1024  vim save.txt 
+ 1025  ls
+ 1026  vim installtion_guide_osrm.txt 
+ 1027  ls
+ 1028  cd bridgetwo/
+ 1029  ls
+ 1030  make
+ 1031  ks
+ 1032  cd build/
+ 1033  make
+ 1034  cd ..
+ 1035  make
+ 1036  cd build/
+ 1037  nm -gDC libbridgetwo.so 
+ 1038  clear
+ 1039  make
+ 1040  cd ..
+ 1041  cd build/
+ 1042  cmake ..
+ 1043  make
+ 1044  cd ..
+ 1045  make
+ 1046  cd build/
+ 1047  make
+ 1048  cd ..
+ 1049  make
+ 1050  cd build/
+ 1051  make
+ 1052  cd ..
+ 1053  make
+ 1054  la
+ 1055  cd
+ 1056  cd ..
+ 1057  ls
+ 1058  cd usr/
+ 1059  ls
+ 1060  cd l
+ 1061  cd local/
+ 1062  ls
+ 1063  cd lib/
+ 1064  ls
+ 1065  rm libosrm*
+ 1066  sudo rm libosrm*
+ 1067  ls
+ 1068  cd ..
+ 1069  ls
+ 1070  find /usr/ -name osrm
+ 1071  cd include/
+ 1072  ls
+ 1073  rm -rf osrm/
+ 1074  sudo rm -rf osrm/
+ 1075  ls
+ 1076  cd ..
+ 1077  ls
+ 1078  cd share
+ 1079  ls
+ 1080  sudo rm -rf osrm/
+ 1081  ls
+ 1082  find /usr/ -name osrm
+ 1083  cd
+ 1084  cd osrm/
+ 1085  ls
+ 1086  rm -rf osrm-backend/
+ 1087  git clone https://github.com/Project-OSRM/osrm-backend.git
+ 1088  cd osrm-backend/
+ 1089  ls
+ 1090  git checkout tags/v5.25.0
+ 1091  sudo apt install build-essential git cmake pkg-config libbz2-dev libxml2-dev libzip-dev libboost-all-dev lua5.2 liblua5.2-dev libtbb-dev
+ 1092  mkdir -p build
+ 1093  cd build/
+ 1094  cmake ..
+ 1095  cmake --build .
+ 1096  ls
+ 1097  sudo cmake --build . --target install
+ 1098  ls
+ 1099  cd
+ 1100  ls
+ 1101  cd osrm/
+ 1102  ls
+ 1103  cd bridgetwo/
+ 1104  ls
+ 1105  cd build/
+ 1106  make
+ 1107  cd ..
+ 1108  make
+ 1109  cd ..
+ 1110  ls
+ 1111  cd bridgetwo/
+ 1112  ls
+ 1113  cd build/
+ 1114  ls
+ 1115  cd ..
+ 1116  rm -rf build/
+ 1117  mkdir build
+ 1118  cd build/
+ 1119  cmake ..
+ 1120  make
+ 1121  cd ..
+ 1122  make
+ 1123  cd build/
+ 1124  make
+ 1125  cd ..
+ 1126  make
+ 1127  cd build/
+ 1128  make
+ 1129  cd ..
+ 1130  make
+ 1131  cd build/
+ 1132  make
+ 1133  cd ..
+ 1134  make
+ 1135  cd build/
+ 1136  make
+ 1137  cd .
+ 1138  cd ..
+ 1139  make 
+ 1140  history > solution_history.txt

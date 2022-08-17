@@ -9,8 +9,6 @@
 /home/ahashan/osrm/bridgetwo/lib.cpp
 iostream
 -
-osrm/match_parameters.hpp
-/home/ahashan/osrm/bridgetwo/osrm/match_parameters.hpp
 osrm/nearest_parameters.hpp
 /home/ahashan/osrm/bridgetwo/osrm/nearest_parameters.hpp
 osrm/route_parameters.hpp
@@ -35,16 +33,8 @@ osrm/engine_config.hpp
 /home/ahashan/osrm/bridgetwo/osrm/engine_config.hpp
 osrm/json_container.hpp
 /home/ahashan/osrm/bridgetwo/osrm/json_container.hpp
-engine/api/match_parameters.hpp
-/home/ahashan/osrm/bridgetwo/engine/api/match_parameters.hpp
-engine/api/nearest_parameters.hpp
-/home/ahashan/osrm/bridgetwo/engine/api/nearest_parameters.hpp
-engine/api/route_parameters.hpp
-/home/ahashan/osrm/bridgetwo/engine/api/route_parameters.hpp
-engine/api/table_parameters.hpp
-/home/ahashan/osrm/bridgetwo/engine/api/table_parameters.hpp
-engine/api/trip_parameters.hpp
-/home/ahashan/osrm/bridgetwo/engine/api/trip_parameters.hpp
+osrm/engine/api/match_parameters.hpp
+/home/ahashan/osrm/bridgetwo/osrm/engine/api/match_parameters.hpp
 engine/engine_config.hpp
 /home/ahashan/osrm/bridgetwo/engine/engine_config.hpp
 engine/status.hpp

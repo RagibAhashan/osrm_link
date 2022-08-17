@@ -236,7 +236,7 @@ LibOSRM_INCLUDE_DIR:PATH=/usr/local/include
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
 //Path to a library.
-TEST_LibOSRM_DYNAMIC_LIBRARY:FILEPATH=/usr/local/lib/libosrm.so
+TEST_LibOSRM_DYNAMIC_LIBRARY:FILEPATH=TEST_LibOSRM_DYNAMIC_LIBRARY-NOTFOUND
 
 //Path to a library.
 TEST_LibOSRM_STATIC_LIBRARY:FILEPATH=/usr/local/lib/libosrm.a
@@ -278,7 +278,7 @@ bridgetwo_LIB_DEPENDS:STATIC=general;-L/usr/local/lib;general;-losrm;general;-fu
 bridgetwo_SOURCE_DIR:STATIC=/home/ahashan/osrm/bridgetwo
 
 //Path to a library.
-pkgcfg_lib_PC_LibOSRM_osrm:FILEPATH=/usr/local/lib/libosrm.so
+pkgcfg_lib_PC_LibOSRM_osrm:FILEPATH=/usr/local/lib/libosrm.a
 
 
 ########################
