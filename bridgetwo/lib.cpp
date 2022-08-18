@@ -37,9 +37,19 @@ using namespace std;
 extern "C" {
     void test() { std::cout << "test\n"; }
 
+    char* pmatch(
+        int n,
+        double* longitudes,
+        double* latitudes
+    ) {
+        cout << "n: " << n << endl;
+        cout << "longitudes: " << longitudes;
+        cout << "pmatch" << endl;
+        return NULL;
+    }
+
+
     int match() {
-
-
         // Configure based on a .osrm base path, and no datasets in shared mem from osrm-datastore
         EngineConfig config;
 
@@ -56,18 +66,7 @@ extern "C" {
         // Routing machine with several services (such as Route, Table, Nearest, Trip, Match)
         const OSRM osrm{config};
 
-        // // The following shows how to use the Route service; configure this service
-        // RouteParameters params;
 
-        // // Route in monaco
-        // params.coordinates.push_back({util::FloatLongitude{7.419758}, util::FloatLatitude{43.731142}});
-        // params.coordinates.push_back({util::FloatLongitude{7.419505}, util::FloatLatitude{43.736825}});
-
-        // // Response is in JSON format
-        // engine::api::ResultT result = json::Object();
-
-        // // Execute routing request, this does the heavy lifting
-        // const auto status = osrm.Route(params, result);
         std::string coordinates = "-73.630014,45.538450;-73.629229,45.538223;-73.628773,45.538102;-73.628473,45.538008;-73.628210,45.537922;-73.627926,45.537873";
         // Latitude,  Longitude,  Timestamp
         // 45.538450, -73.630014, 1660621345032
@@ -76,9 +75,8 @@ extern "C" {
         // 45.538008, -73.628473, 1660621350824
         // 45.537922, -73.628210, 1660621352547
         // 45.537873, -73.627926, 1660621354346
-        MatchParameters match_param;
 
-        // util::Coordinate
+        MatchParameters match_param;
 
         // std::vector<util::Coordinate> trip_coordinates;
         match_param.coordinates.push_back({util::FloatLongitude{-73.630014}, util::FloatLatitude{45.538450}});
@@ -87,20 +85,6 @@ extern "C" {
         match_param.coordinates.push_back({util::FloatLongitude{-73.628473}, util::FloatLatitude{45.538008}});
         match_param.coordinates.push_back({util::FloatLongitude{-73.628210}, util::FloatLatitude{45.537922}});
         match_param.coordinates.push_back({util::FloatLongitude{-73.627926}, util::FloatLatitude{45.537873}});
-
-        // std::vector<unsigned> match_timestamps;
-        match_param.timestamps.push_back(1660621345032);
-        match_param.timestamps.push_back(1660621347061);
-        match_param.timestamps.push_back(1660621349001);
-        match_param.timestamps.push_back(1660621350824);
-        match_param.timestamps.push_back(1660621352547);
-        match_param.timestamps.push_back(1660621354346);
-
-        // match_param.coordinates = trip_coordinates;
-        // match_param.timestamps = match_timestamps;
-        
-
-
 
         engine::api::ResultT result = json::Object();
         try
@@ -119,29 +103,9 @@ extern "C" {
                 {
                     auto &route = routes.values.at(i).get<json::Object>();
                     auto &location = route.values["location"].get<json::Array>();
-
                     cout << location.values.at(0).get<json::Number>().value << " , "<<  location.values.at(1).get<json::Number>().value << endl;
 
-                    
-
-                    //Filling the vector Up - lon and lat
-                    // locVector.emplace_back(location.values.at(0).get<json::Number>().value, location.values.at(1).get<json::Number>().value);
                 }
-
-                // Let's just use the first route
-                // auto &route = routes.values.at(0).get<json::Object>();
-                // const auto distance = route.values["distance"].get<json::Number>().value;
-                // const auto duration = route.values["duration"].get<json::Number>().value;
-
-                // // Warn users if extract does not contain the default coordinates from above
-                // if (distance == 0 || duration == 0)
-                // {
-                //     std::cout << "Note: distance or duration is zero. ";
-                //     std::cout << "You are probably doing a query outside of the OSM extract.\n\n";
-                // }
-
-                // std::cout << "Distance: " << distance << " meter\n";
-                // std::cout << "Duration: " << duration << " seconds\n";
                 return 1;
             }
             

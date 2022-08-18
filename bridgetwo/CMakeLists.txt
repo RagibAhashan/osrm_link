@@ -26,6 +26,8 @@ if(WIN32 AND MSVC_VERSION LESS 1900)
   message(FATAL_ERROR "Building with Microsoft compiler needs Latest Visual Studio 2015 (Community or better)")
 endif()
 
+message("LibOSRM_LIBRARY_DIRS ${LibOSRM_LIBRARY_DIRS}")
+
 link_directories(${LibOSRM_LIBRARY_DIRS})
 add_library(bridgetwo SHARED lib.cpp)
 find_package(Boost 1.71.0 COMPONENTS filesystem system thread iostreams chrono date_time regex REQUIRED)
