@@ -30,22 +30,100 @@
 #include "storage/storage_config.hpp"
 #include <boost/filesystem/path.hpp>
 #include <string>
+#include <osrm/json_container.hpp>
+// #include <util/json_renderer.hpp>
 
 using namespace osrm;
 using namespace std;
 
+// char* json_to_string(json::Object& result){
+//     vector<char> out;
+//     render(out, result);
+//     string sout(out.begin(), out.end());
+//     auto x = sout.c_str();
+    // char* y = new char[out.size() + 1];
+    // strcpy(y, x);
+    // return y;
+// }
+
+extern "C" void osrm_free_char(char* str){
+    delete[] str;
+}
+
+
 extern "C" {
     void test() { std::cout << "test\n"; }
 
-    char* pmatch(
+    void* osrm_init() {
+        EngineConfig config;
+        config.use_shared_memory = false;
+        config.algorithm = EngineConfig::Algorithm::MLD;
+        config.storage_config = {boost::filesystem::path("../maps/canada-latest.osrm")};
+
+        try
+        {
+            cout << "Starting OSRM engine...\n";
+
+            OSRM* osrm = new OSRM(config);
+            cout << "Engine started\n";
+            return static_cast<void*>(osrm);
+        }
+        catch(const std::exception& e)
+        {
+            std::cerr << e.what() << '\n';
+            return static_cast<void*>(NULL);
+        }
+    }
+
+    void osrm_delete(void* osrm_p) {
+        OSRM* osrm = static_cast<OSRM*>(osrm_p);
+        cout << "Deleting osrm ptr\n";
+        delete osrm;
+    }
+
+    void osrm_match(
+        void* osrm_ptr,
         int n,
         double* longitudes,
-        double* latitudes
+        double* latitudes,
+        double* matched_long,
+        double* matched_lat
     ) {
-        cout << "n: " << n << endl;
-        cout << "longitudes: " << longitudes;
-        cout << "pmatch" << endl;
-        return NULL;
+
+        MatchParameters match_param;
+
+        for(int i=0; i < n; i++) {
+            match_param.coordinates.push_back({
+                util::FloatLongitude{longitudes[i]},
+                util::FloatLatitude{latitudes[i]}
+            });
+        }
+
+        engine::api::ResultT result = json::Object();
+        try
+        {  
+            OSRM* osrm = static_cast<OSRM*>(osrm_ptr);
+            const auto status = osrm->Match(match_param, result);
+            auto &json_result = result.get<json::Object>();
+
+            if (status == Status::Ok)
+            {
+                auto &routes = json_result.values["tracepoints"].get<json::Array>();
+
+                for (int i = 0; i < json_result.values["tracepoints"].get<json::Array>().values.size(); i++)
+                {
+                    auto &route = routes.values.at(i).get<json::Object>();
+                    auto &location = route.values["location"].get<json::Array>();
+                    cout << location.values.at(0).get<json::Number>().value << " , "<<  location.values.at(1).get<json::Number>().value << endl;
+                    matched_long[i] = location.values.at(0).get<json::Number>().value;
+                    matched_lat[i] = location.values.at(1).get<json::Number>().value;
+                }
+            }
+        }
+        catch(const std::exception& e)
+        {
+            std::cerr << e.what() << '\n';
+        }
     }
 
 
